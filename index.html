@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2374/2374370.png">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="script.js"></script>
+    
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="screen"></div>
+            <div class="btn" id="delete" onclick="clearScreen()">C</div>
+        </div>
+        <div class="buttons">
+            <div class="col">
+                <div class="btn digits" id="7" onclick="display('7')">7</div>
+                <div class="btn digits" id="4" onclick="display('4')">4</div>
+                <div class="btn digits" id="1" onclick="display('1')">1</div>
+                <div class="btn digits" id="0" onclick="display('0')">0</div>
+            </div>
+            <div class="col">
+                <div class="btn digits" id="8" onclick="display('8')">8</div>
+                <div class="btn digits" id="5" onclick="display('5')">5</div>
+                <div class="btn digits" id="2" onclick="display('2')">2</div>
+                <div class="btn digits" id="dot" onclick="display('.')">.</div>
+            </div>
+            <div class="col">
+                <div class="btn digits" id="9" onclick="display('9')">9</div>
+                <div class="btn digits" id="6" onclick="display('6')">6</div>
+                <div class="btn digits" id="3" onclick="display('3')">3</div>
+                <div class="btn operator" id="equal" onclick="solve()">=</div>
+            </div>
+            <div class="col">
+                <div class="btn operator" id="div" onclick="display('/')">/</div>
+                <div class="btn operator" id="mult" onclick="display('*')">*</div>
+                <div class="btn operator" id="minus" onclick="display('-')">-</div>
+                <div class="btn operator" id="plus" onclick="display('+')">+</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
