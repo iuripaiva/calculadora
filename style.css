@@ -31,7 +31,22 @@ body{
     inline-size: 12.6rem; 
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    height: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(38,28,138); 
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(63, 52, 180); 
+    transition: all .3s;
 }
 
 .container, .col{
